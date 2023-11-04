@@ -18,7 +18,7 @@ CREATE TABLE `Banners` (
 CREATE TABLE `Users` (
 	`email` VARCHAR(50) NOT NULL,
 	`firstName` VARCHAR(15) NOT NULL,
-	`lasName` VARCHAR(15) NOT NULL,
+	`lastName` VARCHAR(15) NOT NULL,
 	`password` VARCHAR(16) NOT NULL,
 	`image` INT(50),
 	`saldo` INT(15) NOT NULL,
