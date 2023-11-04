@@ -29,7 +29,7 @@ public class RegisterController {
 		
 		res.setStatus(0);
 		res.setMessage("Registrasi berhasil silahkan login");
-		res.setData(this.uRepo.save(entity));
+		res.setData(this.uRepo.createUser(entity));
 		
 		return res;
 	}

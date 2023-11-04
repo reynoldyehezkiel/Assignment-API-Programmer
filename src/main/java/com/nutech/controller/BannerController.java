@@ -24,7 +24,7 @@ public class BannerController {
 
 		res.setStatus(0);
 		res.setMessage("Sukses");
-		res.setData(this.bRepo.findAll());
+		res.setData(this.bRepo.findAllBanners());
 		
 		return res;
 	}
