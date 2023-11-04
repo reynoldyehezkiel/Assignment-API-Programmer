@@ -29,12 +29,12 @@ CREATE TABLE `Transactions` (
 	`invoiceNumber` INT(50) NOT NULL,
 	`transactionType` VARCHAR(25) NOT NULL,
 	`totalAmount` INT(15) NOT NULL,
-	`created_on` TIMESTAMP(16) NOT NULL,
-	`id` VARCHAR(50) NOT NULL,
+	`created_on` TIMESTAMP(6) NOT NULL,
+	`id` INT NOT NULL,
 	`email` VARCHAR(50) NOT NULL,
 	PRIMARY KEY (`invoiceNumber`),
-  FOREIGN KEY ('id') REFERENCES Services('id'),
-  FOREIGN KEY ('email') REFERENCES Users('email')
+  FOREIGN KEY (id) REFERENCES Services(id),
+  FOREIGN KEY (email) REFERENCES Users(email)
 );
 
 INSERT INTO Banners(name,image,description) VALUES ('Banner 1','https://nutech-integrasi.app/dummy.jpg','Lerem Ipsum Dolor sit amet');
