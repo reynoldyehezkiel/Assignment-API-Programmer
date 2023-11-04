@@ -13,20 +13,25 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Table(name = "banners")
-public class Banner {
-	
+@Table(name = "users")
+public class User {
+
 	@Id
-	@Column("id")
-	private Integer id;
+	@Column("email")
+	private String email;
 	
-	@Column("name")
-	private String name;
+	@Column("firstName")
+	private String firstName;
+	
+	@Column("lastName")
+	private String lastName;
+	
+	@Column("password")
+	private String password;
 	
 	@Column("image")
 	private String image;
 	
-	@Column("description")
-	private String description;
-	
+	@Column("saldo")
+	private Integer saldo;
 }
